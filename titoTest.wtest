@@ -14,3 +14,17 @@ describe "Tests de Tito" {
     assert.equals(10, tito.dosisConsumida())
   }
 }
+
+describe "test de tito con las nuevas bebidas" {
+  test "Tito consume una dosis de 10cm3 de coctel y su rendimiento pasa a ser de 109.25" {
+  tito.consumir(10, coctel)
+  
+  assert.equals(109.25, tito.rendimiento())
+  }
+
+  test "Tito consume una dosis de 10cm3 de licuado de frutas y su rendimiento pasa a ser de 19" {
+  tito.consumir(10, licuadoDeFrutas)
+  
+  assert.equals(19, tito.rendimiento())
+  }
+}
